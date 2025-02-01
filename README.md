@@ -1,16 +1,16 @@
-# Multilingual FAQ System
+# Multi-language FAQ Platform
 
-A Django-based FAQ management system with automatic translation support for Hindi and Bengali, built with Django REST Framework and Redis caching.
+The Multilingual FAQ System is a Django-based web app that supports English, Hindi, and Bengali FAQs. It features automatic translations, Redis caching, CKEditor for rich text editing, and a Django Admin interface. The system provides REST API endpoints for FAQ retrieval and efficient content management.
 
 ## Features
 
-- ✨ Multilingual support (English, Hindi, Bengali)
-- 🔄 Automatic translation using Google Translate
-- 💾 Redis-based caching for improved performance
-- 🎨 Rich text editing with CKEditor
-- 🔐 Django Admin interface for content management
-- 🚀 REST API endpoints for FAQ retrieval
-- 📱 Mobile-friendly API responses
+- 1 Multilingual support (English, Hindi, Bengali)
+- 2 Automatic translation using Google Translate
+- 3 Redis-based caching for improved performance
+- 4 Rich text editing with CKEditor
+- 5 Django Admin interface for content management
+- 6 REST API endpoints for FAQ retrieval
+- 7 Mobile-friendly API responses
 
 ## Tech Stack
 
@@ -75,20 +75,7 @@ redis-server
 python manage.py runserver
 ```
 
-## Project Structure
 
-```
-faq_system/
-├── faqs/
-│   ├── admin.py          # Admin interface configuration
-│   ├── models.py         # FAQ model with translation support
-│   ├── serializers.py    # API serializers
-│   └── views.py          # API views with caching
-├── faq_system/
-│   ├── settings.py       # Project settings
-│   └── urls.py           # URL configurations
-└── manage.py
-```
 
 ## API Endpoints
 
@@ -140,26 +127,8 @@ Translations are handled automatically using Google Translate:
 - Empty translations are filled automatically
 - Manual translation override is available in admin
 
-## Configuration
 
-### CKEditor Settings
-```python
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'full',
-        'height': 300,
-        'width': 800,
-    },
-}
-```
 
-### REST Framework Settings
-```python
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
-}
-```
 
 ## Error Handling
 
@@ -210,6 +179,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Redis
 - CKEditor
 
-## Support
 
-For support, please open an issue in the repository or contact the maintainers.
